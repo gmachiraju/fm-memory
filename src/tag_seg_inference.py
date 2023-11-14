@@ -152,6 +152,7 @@ def seg_inference_heuristics(model, processor, image, text_list, min_pixels=50, 
         region_dict[i+1-num_skips] = {'bbox': [x,y,w,h], "polygon": coords.tolist(), "tags": tags}
     
     region_dict["all_labels"] = list(text_set) # save all labels that are predicted
+    region_dict["method"] = "direct clipseg heuristics"
     if viz_flag == True:
         plt.show()
     return region_dict, validity_dict
