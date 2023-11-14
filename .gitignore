@@ -1,2 +1,4 @@
 src/older/*
 src/__pycache__/*
+src/outputs/*
+src/scraps/*
